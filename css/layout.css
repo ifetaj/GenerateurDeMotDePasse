@@ -1,0 +1,26 @@
+.container {
+    background-color: var(--gray-800);
+    color: #fff;
+    border-radius: var(--border-radius);
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+}
+
+h1 {
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--gray-100);
+    margin-bottom: 20px;
+}
+
+.strength span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray-800);
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 14px;
+}

@@ -3,44 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GenerateurMotDePasse</title>
+    <title>Password Generator</title>
     <link rel="stylesheet" href="../css/style.css">
-
 </head>
+
 <body>
+
     <div class="title">
         <h1>Password Generator</h1>
     </div>
+
     <div class="container">
-    <form action="" class="form">
-        <div class="field">
-            <label for="passwdField">Password</label>
-            <input type="text" id="passwdField" required>
+
+        <div class="field password-output">
+            <label for="password">Generated Password</label>
+
+            <div class="output-box">
+                <input type="text" id="password" readonly placeholder="Your password will appear here">
+                <button id="copy" type="button">
+                    <img src="../images/copy.svg" alt="Copy password">
+                </button>
+            </div>
+
+            <p id="tooltip">Password copied!</p>
         </div>
-        <div class="field">
-            <label for="">Password length</label>
-            <input type="text" id="" required>
+
+        <div class="strength">
+            <span id="passwordStrength">Strength: —</span>
+            <div id="strengthIndicator"></div>
         </div>
+
         <div class="field">
-            <label for="text">Lowercase (a-z)</label>
-            <button></button>
+            <label for="length">
+                Password length: <span id="lengthValue">12</span>
+            </label>
+            <input type="range" id="length" min="4" max="40" value="12">
         </div>
-        <div class="field">
-            <label for="">Uppercase (A-Z)</label>
-            <button></button>
+
+        <div class="field checkboxes">
+            <label>
+                <input type="checkbox" id="lowercase">
+                Lowercase (a-z)
+            </label>
+
+            <label>
+                <input type="checkbox" id="uppercase">
+                Uppercase (A-Z)
+            </label>
+
+            <label>
+                <input type="checkbox" id="numbers">
+                Numbers (0-9)
+            </label>
+
+            <label>
+                <input type="checkbox" id="symbols">
+                Symbols (!@#$%^&*)
+            </label>
         </div>
-        <div class="field">
-            <label for="">Numbers (0-9)</label>
-            <button></button>
-        </div>
-        <div class="field">
-            <label for="">Special caracters (!, @, #, $, %, ^, &, *, _)</label>
-            <button></button>
-        </div>
-        <div class="field">
-            <button>Generate Password</button>
-        </div>
-    </form>
+
+        <button id="generate" class="btn-primary" type="button">
+            Generate Password
+        </button>
+
     </div>
+
+    <script src="../js/main.js"></script>
 </body>
 </html>

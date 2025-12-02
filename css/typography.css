@@ -1,0 +1,16 @@
+/* TYPOGRAPHY */
+
+body {
+    font-family: var(--font-main);
+    color: var(--gray-100);
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+label {
+    font-size: 14px;
+    color: var(--gray-300);
+}

@@ -1,0 +1,24 @@
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: var(--border-radius);
+    background-color: #1f2532;
+    border: 1px solid var(--gray-600);
+    color: var(--gray-100);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: var(--border-radius);
+    background-color: var(--blue-main);
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+button:hover {
+    background-color: var(--blue-main-hover);
+}
