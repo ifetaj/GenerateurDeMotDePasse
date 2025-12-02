@@ -2,18 +2,19 @@
     /* fonts */
     --font-main: 'Popins', sans-serif;
 
-    /* couleures principales */
+    /* couleures grises */
     --gray-100: #f8f9fa;
     --gray-200: #f1f3f4;
     --gray-300: #dadce4;
     --gray-600: #5f6368;
     --gray-800: #202124;
 
+    /* couleures primaires */
     --blue-main: #1375deff;
     --blue-main-hover: #11b8ebff;
     
     --border-radius: 0.8rem;
-    --transition: 0.2s ease;
+    --transition: 0.2s ease-in-out;
 
     --input-height: 45px;
 

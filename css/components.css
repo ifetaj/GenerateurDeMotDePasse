@@ -1,24 +1,69 @@
-input {
+/* -------------------------------------------------------------
+   COMPONENTS
+------------------------------------------------------------- */
+
+/* Form fields */
+.field {
+    margin-bottom: 18px;
     width: 100%;
-    padding: 12px;
-    border-radius: var(--border-radius);
-    background-color: #1f2532;
-    border: 1px solid var(--gray-600);
-    color: var(--gray-100);
 }
 
-button {
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="range"] {
     width: 100%;
     padding: 12px;
+    height: var(--input-height);
     border-radius: var(--border-radius);
-    background-color: var(--blue-main);
-    color: #fff;
-    font-weight: 500;
-    border: none;
-    cursor: pointer;
+    border: 1px solid var(--gray-600);
+    background: #1f2532;
+    color: var(--gray-100);
+    outline: none;
     transition: var(--transition);
 }
 
-button:hover {
-    background-color: var(--blue-main-hover);
+input:focus {
+    border-color: var(--blue-main);
+}
+
+/* Button */
+button,
+.btn-primary {
+    width: 100%;
+    padding: 12px 18px;
+    border-radius: var(--border-radius);
+    background: var(--blue-main);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    transition: var(--transition);
+}
+
+button:hover,
+.btn-primary:hover {
+    background: var(--blue-main-hover);
+}
+
+/* Copy button */
+#copy {
+    position: absolute;
+    right: 10px;
+    top: 36px;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Tooltip */
+#tooltip {
+    opacity: 0;
+    color: #4bd76b;
+    font-size: 13px;
+    margin-top: 5px;
+    transition: var(--transition);
 }

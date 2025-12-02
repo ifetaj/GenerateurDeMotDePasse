@@ -5,15 +5,24 @@
     font-family: sans-serif;
 }
 
+html, body {
+    height: 100%;
+}
+
 ul, ol {
     list-style: none;
 }
 
 a {
     text-decoration: none;
-    color: var(--color-gray-600);
+    color: inherit;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
